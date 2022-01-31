@@ -40,12 +40,12 @@ class Velo extends AbstractController
             return $this->redirect(); 
         }
 
-        // $modelComment = new \Models\Comment();
-        // $commentaires = $modelComment->findAllCommentsByCocktail($id);
+        $modelAvi = new \Models\Avi();
+        $avi = $modelAvi->findAllCommentsByVelo($id);
 
         $pageTitle = $velo->getName();
 
-        return $this->render("velos/show", compact('pageTitle' ,'velo'));
+        return $this->render("velos/show", compact('pageTitle' ,'velo','avi'));
 
     }
 ///////////////////////////////////////////////////////////////////
