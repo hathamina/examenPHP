@@ -13,8 +13,8 @@
 
 
 <nav class="navbar nav-expand-lg navbar-light bg-dark mb-5">
-        <a href="/examenPHP" class="navbar-brand">Magasin velo</a>
-        <!-- <a href="?type=cocktail&action=new" class="btn btn-primary">Create Cocktail</a> -->
+        <a href="/examenPHP" class="navbar-brand mx-5 ">Magasin velo</a>
+        <a href="?type=velo&action=new" class="mx-5">ajouter un velo</a>
         <!-- <a href="?type=sandwich&action=index" class="btn btn-primary">sandwiches</a> -->
 </nav>
 

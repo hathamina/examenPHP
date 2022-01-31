@@ -70,7 +70,24 @@ class Velo extends AbstractModel
     public function setPrice($price){
         $this->price = $price;
     }
+///////////////////////////////////////////////////
+/**
+* ajoute un nouveau produit dans la BDD
+* @param Velo $velo
+* @return void
+*/
+    public function save(Velo $velo):void
+    {
+            $sql = $this->pdo->prepare("INSERT INTO {$this->nomDeLaTable} 
+             (name, image, description, price) VALUES (:name, :image, :description, :price)");
 
+            $sql->execute([
+                'name'=>$velo->name,
+                'image'=>$velo->image,
+                'description'=>$velo->description,
+                'price'=>$velo->price,
+            ]);
+    }
 }
 
 ?>

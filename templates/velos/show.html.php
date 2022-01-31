@@ -4,4 +4,13 @@
     <h3><strong>descreption :</strong></h3>
     <p><?= $velo->getDescription() ?></p>
     <h3><?= $velo->getPrice() ?></h3>
+
+<form action="?type=velo&action=delete" method="post">
+    <button class="btn btn-danger" type="submit" name="id" value="<?= $velo->getId() ?>">Supprimer</button>
+</form>
+
 </div>
+
+
+
+
