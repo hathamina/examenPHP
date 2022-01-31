@@ -13,22 +13,21 @@
 
 
 <nav class="navbar nav-expand-lg navbar-light bg-dark mb-5">
-        <a href="/baseFramework" class="navbar-brand">BASE FRAMEWORK</a>
-        <a href="/baseFramework" class="navbar-brand">Home</a>
+        <a href="/examenPHP" class="navbar-brand">Magasin velo</a>
         <!-- <a href="?type=cocktail&action=new" class="btn btn-primary">Create Cocktail</a> -->
         <!-- <a href="?type=sandwich&action=index" class="btn btn-primary">sandwiches</a> -->
 </nav>
 
 <div class="alert alert-warning alert-dismissible fade <?php if($_GET['info']=='deleted'){ echo"show";}?>" role="alert">
   
-  <strong>Erreur</strong> Je n'ai pas pu supprimer ce produit car il n'existe pas, petit malin.
+  <strong>Erreur</strong> il n'existe pas.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
 </div>
 
 <div class="alert alert-warning alert-dismissible fade <?php if($_GET['info']=='noId'){ echo"show";}?>" role="alert">
   
-  <strong>Erreur</strong> ce produit n'existe pas, petit malin.
+  <strong>Erreur</strong> ce produit n'existe pas.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
 </div>

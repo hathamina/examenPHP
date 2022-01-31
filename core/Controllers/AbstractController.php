@@ -12,7 +12,7 @@ abstract class AbstractController
     {
         $this->defaultModel = new $this->defaultModelName();
     }
-        public function redirect( ? array $url=null):Response
+        public function redirect( ? array $url=null)
             {
                 return \App\Response::redirect($url);
             }

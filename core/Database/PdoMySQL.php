@@ -14,9 +14,9 @@ class PdoMySQL
     */
  public static function getPdo():\PDO{
 
-        $dsn = "mysql:host=localhost;dbname=baseframework;charset=utf8";
-        $user = "amina";
-        $pwd = "w4XZ7Czc]py.KTRH";
+        $dsn = "mysql:host=localhost;dbname=magasinvelo;charset=utf8";
+        $user = "hathroubiamina";
+        $pwd = "_HDk0[h4XpXZ7CbL";
    
            $pdo = new \PDO($dsn, $user,$pwd, [
                    \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
