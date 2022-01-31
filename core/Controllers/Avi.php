@@ -58,8 +58,8 @@ class Avi extends AbstractController
         $author = null;
         $content = null;
 
-        if(!empty($_POST['aviId']) && ctype_digit($_POST['aviId'])){
-            $veloId = $_POST['aviId'];
+        if(!empty($_POST['velo_Id']) && ctype_digit($_POST['velo_Id'])){
+            $veloId = $_POST['velo_Id'];
         }
 
         if(!empty($_POST['author'])){
